@@ -15,6 +15,14 @@ platforms:
     driver_config:
       image: debian:wheezy
       provision_command: curl -L https://www.opscode.com/chef/install.sh | bash
+  - name: ubuntu-14
+    driver_config:
+      image: ubuntu:14.04
+      provision_command: curl -L https://www.opscode.com/chef/install.sh | bash
+  - name: ubuntu-12
+    driver_config:
+      image: ubuntu:12.04
+      provision_command: curl -L https://www.opscode.com/chef/install.sh | bash
 
 suites:
   - name: default
