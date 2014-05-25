@@ -1,0 +1,23 @@
+---
+driver:
+  name: docker
+  use_sudo: false
+
+provisioner:
+  name: chef_zero
+
+platforms:
+  - name: debian-squeeze
+    driver_config:
+      image: debian:squeeze
+      provision_command: curl -L https://www.opscode.com/chef/install.sh | bash
+  - name: debian-wheezy
+    driver_config:
+      image: debian:wheezy
+      provision_command: curl -L https://www.opscode.com/chef/install.sh | bash
+
+suites:
+  - name: default
+    run_list:
+      - recipe[motd]
+    attributes:
