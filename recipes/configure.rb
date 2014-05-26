@@ -4,7 +4,7 @@ directory '/etc/update-motd.d/' do
   action :create
 end
 
-if node["platform"] == "debian"
+if platform?("debian")
     file "/etc/motd" do
       action :delete
     end
