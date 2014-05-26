@@ -1,3 +1,4 @@
+# encoding: UTF-8
 # rubocop:disable SingleSpaceBeforeFirstArg
 name               'motd'
 maintainer         'Maxime Pelletier'

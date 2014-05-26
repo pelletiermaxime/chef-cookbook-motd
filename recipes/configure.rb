@@ -1,3 +1,4 @@
+# encoding: UTF-8
 directory '/etc/update-motd.d/' do
   owner 'root'
   group 'root'
