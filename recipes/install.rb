@@ -9,9 +9,9 @@ cb.manifest['files'].each do |cbf|
   filename = cbf['name']
 
   cookbook_file "/etc/update-motd.d/#{filename}" do
-      source filename
-      mode 0755
-      owner "root"
-      group "root"
-    end
+    source filename
+    mode 0755
+    owner 'root'
+    group 'root'
+  end
 end
